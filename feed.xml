@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gerbyzation</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://gerbyzation.github.io/</link>
+    <atom:link href="http://gerbyzation.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 20 Oct 2014 17:21:58 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Oct 2014 17:21:58 +0100</lastBuildDate>
+    <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>The music surrounding us</title>
+        <description>&lt;p&gt;Yesterday Mike gave a presentation for the module DAT201 (Strageties for Art &amp;amp; Technology) about Sound Art, covering several topics and talked about some of the questions. One of the questions was about noise: ‘Is noise music?’. That question goes back to the question ‘What is noise?’. &lt;/p&gt;
+
+&lt;p&gt;Today’s session was a perfect continuation of this topic. We talked about environmental sound with the goal to be more aware of the sounds surrounding you and appriciative of its characteristics. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Let’s walk together through a great modern capital, with the ear more attentive than the eye, and we will vary the pleasures of our sensibilities by distinguishing among the gurglings of water, air and gas inside metallic pipes, the rumblings and rattlings of engines breathing with obvious animal spirits, the rising and falling of pistons, the stridency of mechanical saws, the loud jumping of trolleys on their rails, the snapping of whips, the whipping of flags. We will have fun imagining our orchestration of department stores’ sliding doors, the hubbub of the crowds, the different roars of railroad stations, iron foundries, textile mills, printing houses, power plants and subways.&lt;/p&gt;
+
+  &lt;p&gt;Luigi Russolo, &lt;em&gt;The Art of Noise&lt;/em&gt;, 1913&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There is a lot of stuff happening around you, but brains are really good at filtering away the ‘backgroundnoise’ to help you focus. &lt;/p&gt;
+
+&lt;p&gt;We went out and walked around campus with an audiorecorder listening to the sound around us and trying to capture some of those sounds. Quite a lot of sound is too soft or far away to clearly make a record of. But we were able to record some interesting sounds in the workshop, UPSU, outside buildings and from a watertap. &lt;/p&gt;
+
+&lt;p&gt;Then we imported the sounds into Audacity and played around with them. I played around with several effects, among which the ‘Paulstretch’. By stretching the audio out, you can get some really nice ambient sounds. I’ve also done some other things and created a small composition with the different sounds.&lt;/p&gt;
+
+&lt;p /&gt;
+
+&lt;center&gt;
+&lt;audio src=&quot;/assets/audio/fieldrecording_LQ.mp3&quot; preload=&quot;none&quot; /&gt;
+&lt;/center&gt;
+&lt;p /&gt;
+
+</description>
+        <pubDate>Thu, 09 Oct 2014 23:43:00 +0100</pubDate>
+        <link>http://gerbyzation.github.io/dat203/2014/10/09/fieldrecording.html</link>
+        <guid isPermaLink="true">http://gerbyzation.github.io/dat203/2014/10/09/fieldrecording.html</guid>
+        
+        
+        <category>dat203</category>
+        
+      </item>
+    
+      <item>
+        <title>Psychogeography - &#39;Falling in love with places&#39;</title>
+        <description>&lt;p&gt;In the first practical session of Reflexive Design Mike talked about ‘Psychogeography’, which is defined as ‘the study of the precise laws and specific effects of the geographical environment, consciously organized or not, on the emotions and the behavior of individuals’. In understandable English that means making geographical distinction between areas based on emotions.&lt;/p&gt;
+
+&lt;p&gt;The emotional judgement of locations is something I recognise doing. I’ve just moved to Plymouth two weeks ago from the Netherlands, so there is lots of new stuff to discover. In the first week you get a lot of impressions and feelings when walking through Plymouth. But in a short period as a week or two things start to become normal and you pay less attention to your surroundings and how it makes you feel. &lt;/p&gt;
+
+&lt;p&gt;When I was about 10 years old and we’d drive to church on the sundaymorning on our bycicles, we’d come at a crossing with the option to follow the main road or take a right and drive through a block. I always hated it when we’d take the right turn and drive through the neighbourhood. Why? The road through the neighbourhood was a hobbly paved road while the bikelane next to the main road was nice equal asphalt. And even though I had the only bike with springs I hated to drive over that road.&lt;/p&gt;
+
+&lt;p&gt;I must admit I didn’t follow the instructions strictly, because I’ve been here for two weeks now makes it a bit difficult to do an ‘imaginary walk’ through Plymouth. Instead I’ll do the real walking :). 	&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Oct 2014 16:30:00 +0100</pubDate>
+        <link>http://gerbyzation.github.io/dat203/2014/10/06/psychogeography.html</link>
+        <guid isPermaLink="true">http://gerbyzation.github.io/dat203/2014/10/06/psychogeography.html</guid>
+        
+        
+        <category>dat203</category>
+        
+      </item>
+    
+      <item>
+        <title>New site, new uni, new exciting stuff!</title>
+        <description>&lt;h1 id=&quot;hi&quot;&gt;Hi!&lt;/h1&gt;
+
+&lt;p&gt;THis is a new version of my personal site, a work in progress!
+For now I’ll be mainly posting for the DAT203 Reflexive Design module from Digital Art &amp;amp; Technology. Later I’ll improve the site and expand it.&lt;/p&gt;
+
+&lt;p&gt;Last year I did the course Communcation &amp;amp; Multimedia Design at Avans in Breda, I finished my first year and received my propaedeutics. But I’ve quit CMD and joined the second year of &lt;a href=&quot;http://digitalartandtechnology.co.uk/ (Digital Art &amp;amp; Technology)&quot;&gt;Digital Art &amp;amp; Technology&lt;/a&gt; at Plymouth University, which I’m really excited about! &lt;/p&gt;
+
+&lt;p&gt;We’ve started for a few weeks now and I really enjoy it. We’re already doing some interesting stuff and there is much more exciting stuff coming :)&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 05 Oct 2014 23:21:00 +0100</pubDate>
+        <link>http://gerbyzation.github.io/2014/10/05/work-in-progress.html</link>
+        <guid isPermaLink="true">http://gerbyzation.github.io/2014/10/05/work-in-progress.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
