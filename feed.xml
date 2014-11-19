@@ -6,9 +6,37 @@
 </description>
     <link>http://gerbyzation.github.io/</link>
     <atom:link href="http://gerbyzation.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Oct 2014 22:14:46 +0000</pubDate>
-    <lastBuildDate>Mon, 27 Oct 2014 22:14:46 +0000</lastBuildDate>
-    <generator>Jekyll v2.3.0</generator>
+    <pubDate>Wed, 19 Nov 2014 17:14:53 +0000</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 17:14:53 +0000</lastBuildDate>
+    <generator>Jekyll v2.0.3</generator>
+    
+      <item>
+        <title>GPS drawing</title>
+        <description>&lt;p&gt;This week we talked about GPS drawings. This is the practise of walking a figure and keeping a record of your GPS locations so these can be digitally visualised into your ‘drawing’. &lt;/p&gt;
+
+&lt;p&gt;One of the characteristics of a GPS drawing is the influence the geoography has on your drawing. Because of (articifial or natural) obstacles forces you to &lt;/p&gt;
+
+&lt;p&gt;GPS drawings are always influenced by the geography of the location where it’s drawn. Natural or artificial obstacles make it impossible to draw perfect figures which gives that every drawing has a ‘signature’ of the location where it was drawn. &lt;/p&gt;
+
+&lt;p&gt;To me the appleal of GPS drawing seems to be in the fact that you can see it as a struggle between you and the location. Humans have always had a tendency to leave a trail and shape their environment to their benefits, but &lt;/p&gt;
+
+&lt;p&gt;After looking at the map Robert and I decided to walk around the shopping area and draw a shopping bag around it. We drew a quick sketch on the map in photoshop:
+&lt;img src=&quot;/assets/images/DAT203_gps_plan.jpg&quot; alt=&quot;The planned route&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A little while later we walked the route and you can see the result on the picture below. Because our drawing is on a relative low scale the line is quite wobbly and sometimes we had to divert a bit from our planned route. Also we had a little glitch at the end which added some random lines through the crossing. 
+&lt;img src=&quot;/assets/images/DAT203_gps_walk.png&quot; alt=&quot;The map which shows our GPS drawing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re interested (and as proof that we did do the walk :) ), you can find the original GPS data here: &lt;a href=&quot;/assets/other/shoppingbag.xml&quot;&gt;GPS data (XML)&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Oct 2014 22:50:00 +0000</pubDate>
+        <link>http://gerbyzation.github.io/dat203/2014/10/27/GPS-drawing.html</link>
+        <guid isPermaLink="true">http://gerbyzation.github.io/dat203/2014/10/27/GPS-drawing.html</guid>
+        
+        
+        <category>dat203</category>
+        
+      </item>
     
       <item>
         <title>The music surrounding us</title>
@@ -55,7 +83,128 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/DAT203_psychogeo_map.JPG&quot; alt=&quot;The route drawn on the map&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Because I just moved to Plymouth it was a bit difficult to follow the assignment strictly. So instead of doing an ‘imaginary walk’, I have done the real walk together with Marcin. &lt;/p&gt;
+&lt;p&gt;Because I just moved to Plymouth it was a bit difficult to follow the assignment strictly and do an imaginary walk and divede the map up in area’s that have different feelings. So we skipped that one and went straight to the real walk!&lt;/p&gt;
+
+&lt;p&gt;Marcin and I did the walk according to the route we drew on the map, here you can find some pictures and our findings noted in keypoints:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Start&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Crossing Royal parade &amp;amp; Armada way / House of Fraser
+    &lt;ul&gt;
+      &lt;li&gt;Open space gives a sense of freedom&lt;/li&gt;
+      &lt;li&gt;People are busy with their own things (i.e. buying and selling goods)&lt;/li&gt;
+      &lt;li&gt;gives a sense of capitalism&lt;/li&gt;
+      &lt;li&gt;building made of massive concrete blocks make you feel small and unwelcome&lt;/li&gt;
+      &lt;li&gt;feels hurried and bussy
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_01.JPG&quot; alt=&quot;Photo 01&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_02.JPG&quot; alt=&quot;Photo 02&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Crossing Armada way &amp;amp; Cornwall Str.
+    &lt;ul&gt;
+      &lt;li&gt;Trees and greenery gives more social area feeling&lt;/li&gt;
+      &lt;li&gt;even in the middle of the shopping district with loads of people, feels like a different place&lt;/li&gt;
+      &lt;li&gt;gives rest and more pieace, friendly&lt;/li&gt;
+      &lt;li&gt;escape from the hurry (rush)&lt;/li&gt;
+      &lt;li&gt;feels like an oasis&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Motorway
+    &lt;ul&gt;
+      &lt;li&gt;in between places&lt;/li&gt;
+      &lt;li&gt;people don’t pay attention, just want to go somewhere&lt;/li&gt;
+      &lt;li&gt;place of transition (transition of spaces)&lt;/li&gt;
+      &lt;li&gt;don’t want to stay there&lt;/li&gt;
+      &lt;li&gt;people are not really ‘in a place’
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_03.JPG&quot; alt=&quot;Photo 03&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_04.JPG&quot; alt=&quot;Photo 04&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Oxford place
+    &lt;ul&gt;
+      &lt;li&gt;residential are under construction, makes you feel unsafe (something may fall on you off the building)&lt;/li&gt;
+      &lt;li&gt;cautions&lt;/li&gt;
+      &lt;li&gt;people come here to get rest after day of work&lt;/li&gt;
+      &lt;li&gt;not much decoration, greenery is rare&lt;/li&gt;
+      &lt;li&gt;boring fronts&lt;/li&gt;
+      &lt;li&gt;poles with phonelines, association with slumms
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_05.JPG&quot; alt=&quot;Photo 05&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_06.JPG&quot; alt=&quot;Photo 06&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Victoria park
+    &lt;ul&gt;
+      &lt;li&gt;welcoming place&lt;/li&gt;
+      &lt;li&gt;sense of freedom&lt;/li&gt;
+      &lt;li&gt;quietness, escape from the city&lt;/li&gt;
+      &lt;li&gt;place for leisure&lt;/li&gt;
+      &lt;li&gt;place where you can relax, do nothing, think
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_07.JPG&quot; alt=&quot;Photo 07&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Clarence court/Abbey thingy
+    &lt;ul&gt;
+      &lt;li&gt;functional but boring buildings&lt;/li&gt;
+      &lt;li&gt;inconsistent with different styles of buildings&lt;/li&gt;
+      &lt;li&gt;untidy
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_08.JPG&quot; alt=&quot;Photo 08&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_09.JPG&quot; alt=&quot;Photo 09&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Adelaide str.
+    &lt;ul&gt;
+      &lt;li&gt;looks like it used to be centre of a small town&lt;/li&gt;
+      &lt;li&gt;quiet and peacefull with wide open alleyways&lt;/li&gt;
+      &lt;li&gt;unique
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_10.JPG&quot; alt=&quot;Photo 10&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Union str.
+    &lt;ul&gt;
+      &lt;li&gt;more industrial&lt;/li&gt;
+      &lt;li&gt;bussy, occupied by people and cars&lt;/li&gt;
+      &lt;li&gt;feels like we’re back in the city&lt;/li&gt;
+      &lt;li&gt;glory days are gon for part in direction of city centre&lt;/li&gt;
+      &lt;li&gt;contrast between investment area and poverty/abandoned
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_11.JPG&quot; alt=&quot;Photo 11&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_12.JPG&quot; alt=&quot;Photo 12&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Citroen dealer
+    &lt;ul&gt;
+      &lt;li&gt;much more cozy, more trees and greenery&lt;/li&gt;
+      &lt;li&gt;varying buildings&lt;/li&gt;
+      &lt;li&gt;looked after, clean
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_13.JPG&quot; alt=&quot;Photo 13&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_14.JPG&quot; alt=&quot;Photo 14&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;End of Hillbay Rd / roundabout
+    &lt;ul&gt;
+      &lt;li&gt;open spaces&lt;/li&gt;
+      &lt;li&gt;commercial&lt;/li&gt;
+      &lt;li&gt;neutral feeling
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_15.JPG&quot; alt=&quot;Photo 15&quot; /&gt;
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_16.JPG&quot; alt=&quot;Photo 16&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Millbay / West Hoe str.
+    &lt;ul&gt;
+      &lt;li&gt;peacefull&lt;/li&gt;
+      &lt;li&gt;mixture of pretty/ugly, history and new (see photo)&lt;/li&gt;
+      &lt;li&gt;cool trees
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_17.JPG&quot; alt=&quot;Photo 17&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The cressent / Notte str.
+    &lt;ul&gt;
+      &lt;li&gt;We are back in bussy city centre&lt;/li&gt;
+      &lt;li&gt;don’t feel like you want to spend much time in here as it makes you tired
+&lt;img src=&quot;/assets/images/DAT203_psychogeo_18.JPG&quot; alt=&quot;Photo 18&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 </description>
         <pubDate>Mon, 06 Oct 2014 16:30:00 +0100</pubDate>
@@ -74,7 +223,7 @@
 &lt;p&gt;THis is a new version of my personal site, a work in progress!
 For now I’ll be mainly posting for the DAT203 Reflexive Design module from Digital Art &amp;amp; Technology. Later I’ll improve the site and expand it.&lt;/p&gt;
 
-&lt;p&gt;Last year I did the course Communcation &amp;amp; Multimedia Design at Avans in Breda, I finished my first year and received my propaedeutics. But I’ve quit CMD and joined the second year of &lt;a href=&quot;http://digitalartandtechnology.co.uk/ (Digital Art &amp;amp; Technology)&quot;&gt;Digital Art &amp;amp; Technology&lt;/a&gt; at Plymouth University, which I’m really excited about! &lt;/p&gt;
+&lt;p&gt;Last year I did the course Communcation &amp;amp; Multimedia Design at Avans in Breda, I finished my first year and received my propaedeutics. But I’ve quit CMD and joined the second year of &lt;a href=&quot;http://digitalartandtechnology.co.uk/&quot; title=&quot;Digital Art &amp;amp; Technology&quot;&gt;Digital Art &amp;amp; Technology&lt;/a&gt; at Plymouth University, which I’m really excited about! &lt;/p&gt;
 
 &lt;p&gt;We’ve started for a few weeks now and I really enjoy it. We’re already doing some interesting stuff and there is much more exciting stuff coming :)&lt;/p&gt;
 
