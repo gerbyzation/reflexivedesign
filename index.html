@@ -68,27 +68,59 @@
       <div class="post">
 		<header class="post-header">
 	        <h1 class="post-title">
-	          <!-- <a class="post-link" href="/dat203/2014/10/27/GPS-drawing.html"> -->GPS drawing <!-- </a> -->
+	          <!-- <a class="post-link" href="/dat203/2014/12/17/ar-app.html"> -->Augmented Reality App <!-- </a> -->
 	        </h1>
 
-	        <span class="post-meta">27 October 2014</span>
+	        <!-- <span class="post-meta">17 December 2014</span> -->
 		</header>
 		<article class="post-content">
-			<p>This week we talked about GPS drawings. This is the practise of walking a figure and keeping a record of your GPS locations so these can be digitally visualised into your ‘drawing’. </p>
+			<p>Throughout the module we looked into a few art practises such as GPS drawing, psychogeopgraphy and music concrète. We now have been given the assignment to create an augmented reality (AR) app incorporating one of the art practises. After a bit of tinkering I came up with a few ideas and elements I could use for an app.</p>
 
-<p>One of the characteristics of a GPS drawing is the influence the geoography has on your drawing. Because of (articifial or natural) obstacles forces you to </p>
+<p><img src="/assets/images/DAT203_arapp_mindmap.jpg" alt="Some ideas mapped out, which might or might not make sense to other people :)" />Some ideas mapped out, which might or might not make sense to other people :) I’ll cover the two most interesting ideas I had.</p>
 
-<p>GPS drawings are always influenced by the geography of the location where it’s drawn. Natural or artificial obstacles make it impossible to draw perfect figures which gives that every drawing has a ‘signature’ of the location where it was drawn. </p>
+<p>The first one is a bit of a mix between the practises. The idea evolved around (live) image manipulation, influenced by the user input about the feeling of the area or by sound input. The user could give an input (maybe the user creates sound as input) or soundbites from the surrounding would be used for input which would be used as paramaters for an image manipulation algorithm. Besides the standaard filter effects for photo manipulation I was thinking about applying algorithms which would have a glitch effect or something like pixel sorting. </p>
 
-<p>To me the appleal of GPS drawing seems to be in the fact that you can see it as a struggle between you and the location. Humans have always had a tendency to leave a trail and shape their environment to their benefits, but </p>
+<p>Pixel sorting is something I recently discovered and would like to play around with some day. Pixel sorting is the ‘invention’ of Kim Asendorf. It would be interesting to see if this could be used to express emotions and feelings, or give the image of a certain place a certain atmosphere.</p>
 
-<p>After looking at the map Robert and I decided to walk around the shopping area and draw a shopping bag around it. We drew a quick sketch on the map in photoshop:
-<img src="/assets/images/DAT203_gps_plan.JPG" alt="The planned route" /></p>
+<p><img src="/assets/images/DAT203_arapp_pixelsorting.jpg" alt="An example of a pixel-sorted photo by Kim Asendorf" />
+An example of a pixel-sorted photo by Kim Asendorf</p>
 
-<p>A little while later we walked the route and you can see the result on the picture below. Because our drawing is on a relative low scale the line is quite wobbly and sometimes we had to divert a bit from our planned route. Also we had a little glitch at the end which added some random lines through the crossing. 
-<img src="/assets/images/DAT203_gps_walk.jpg" alt="The map which shows our GPS drawing" /></p>
+<p>The second idea had more to do with GPS drawing. The idea is to make it crowdsourced instead of drawing it on your own. The goal is to make it a group activity, which also means there has to be a ‘commitment’ as a group to create a drawing. This idea has been inspired by the <a href="http://donottouch.org">‘Do Not Touch’</a>, interactive &amp; crowdsources video where users ‘participate’ in the video with their mouse cursos. The cursor is also being recorded and added to the video. </p>
 
-<p>If you’re interested (and as proof that we did do the walk :) ), you can find the original GPS data here: <a href="/assets/other/shoppingbag.xml">GPS data (XML)</a>.</p>
+<p><img src="/assets/images/DAT203_arapp_donottouch.jpg" alt="A part of the 'Do Not Touch' video where the users have to create a smiley" />A part of the ‘Do Not Touch’ video where the users have to create a smiley.</p>
+
+<p>The interesting part about crowdsources artwork is that individual choices of everybody influence the collective outcome. This also reflects how we live together as humans in communities. We all make our own individual choices, but everything has impact on all the other individuals, direct or indirect and the collective whole. But we won’t get to philosofical now :).</p>
+
+<p>I struggled a bit with the AR implementation , the initial ideas I had didn’t really make use of any augmented reality features. So the requirement of AR has been the reason why I had to drop quite a few of ideas.
+The 0ne idea I could fit with AR was the crowdsourced GPS drawing, so that’s the concept I picked to build a prototype for. </p>
+
+<p>The goal of the app is to create a collaborative experience, make people interact with each other and work towards a collective goal. In the process of this people will also interact and be influenced by the terrain and environment, as with the original form of GPS drawing.</p>
+
+<p>As you can see the app itself consists of the camera view and a (ugly) button to add a new point to the data set. The image target is being displayed in front of the camera, where you can see some testdata I’ve put into the database. It’s supposed to look like a question mark, I might have forgot a few points :-P The green dots it the data set being visualised, the red dot is the current position (when available). 
+<img src="/assets/images/DAT203_arapp_screenshot.png" alt="" /></p>
+
+<p>This is a screenshot of the app in function. You can see how they display the dots. </p>
+
+<h3 id="technical-implementation">Technical Implementation</h3>
+<p>THe prototype consists of two parts; the app for android itself and a server application. The android app is build with Unity3D and Vuforia, an augmented reailty toolkit. Developing in Unity3D has been a bit of a jump in at the deep end with 0 experience in either Unity or C#. </p>
+
+<p>On the server side I have written a Node.js app linked with a PostgreSQL, all running on Heroku. For this purpose websockets would have been a good way for the client/server communication but after looking into it I found it was too complicated to implement in the client side (at least for someone without any C# experience :) ) and because I was building a prototype where performance isn’t the biggest priority I decided to go with an easier solution. The server has routes for two url’s; ending with <code>/db</code> and <code>/pos/(lat),(long)</code>. </p>
+
+<p>The first route queries the database and pulls all the locations out of the database and returns a webpage with the data in JSON. With the second URL the latitude and longitude coordinates are included into the URL. The server grabs this as a string, splits it and inserts it into the database.</p>
+
+<p>In Unity the request go through a WWW-object, which is used to load the content of a webpage. When requesting the locations, it receives the JSON in the webpage which is then further parsed in Unity. When submitting data it doesn’t receive any data, it is just being used to send the request to the server, which makes the whole implementation of the server/client a lot simpler than using websockets. </p>
+
+<p>After the JSON is parsed it processes the values, scales them accordingly to fit the image target and is then displayed with dots.</p>
+
+<h3 id="options-for-expansionimprovement">Options for expansion/improvement</h3>
+<p>It’s still a prototype, there are quite a lot of things which could be added or improved (besides more prettyness in the UI ed).</p>
+
+<ul>
+  <li>If this would become a real app it wouldn’t be very easy to use if it displays everything in one big map (but if it was, it might also look quite interesting? Or display all the drawings as a big drawing wall?). Probably there needs to be a feature which enables you to select different ‘projects’. </li>
+  <li>It would be cool if you could pick unique image targets for your drawing/project, improving the relation between the environment and the artwork</li>
+  <li>The server doesn’t work very effective with polling everytime. A better technology like websockets might be a good improvement</li>
+  <li>Include altitude into data so the data becomes more of a point cloud</li>
+</ul>
 
 
 		</article>
@@ -107,10 +139,102 @@
       <div class="post">
 		<header class="post-header">
 	        <h1 class="post-title">
-	          <!-- <a class="post-link" href="/dat203/2014/10/09/fieldrecording.html"> -->The music surrounding us <!-- </a> -->
+	          <!-- <a class="post-link" href="/dat203/2014/11/17/public-artwork.html"> -->Public Artworks <!-- </a> -->
 	        </h1>
 
-	        <span class="post-meta">9 October 2014</span>
+	        <!-- <span class="post-meta">17 November 2014</span> -->
+		</header>
+		<article class="post-content">
+			<h3 id="the-monument-to-the-conquerors-of-space">The Monument to the Conquerors of Space</h3>
+<p>The Monument to the Conquerors of Space (1964) is a monument in Moscow build in honour of Russia’s preeminence in space. In 1961 Yuri Gagarin made the first orbit around the earth and went to outer space. The monument consists of a big obelisk with a curve (110 meters high) made with titanium, with on top a rocket. The monument is to resemble the rocket and the plumes created when taking off. On the base of the monument are engravings picturing resembling the people involved in the space programm. </p>
+
+<p><img src="/assets/images/DAT203_arapp_space.jpg" alt="" /></p>
+
+<p>The purpose of te Monument to the Conquerors of Space is to celebrate the achievements in space made by the Soviet Union. In the 60’s the Cold War was in full swing and the Soviet Union had beaten the USA in making the first steps into space. The monument was the symbolisation of these victories in the space race and functions to pride the Soviet Union achievements and celebrate the greatness of the Union.</p>
+
+<p>The location of the monument might have been inspired by the fact that most parts of the space programm were based in these parts of the city. Korolyov, the lead engineer, lived a few blocks away. </p>
+
+<p>The monument is a permanent building and also houses the Memorial Museum of Cosmonautics. The Soviet Union build the monument, so there was no lack of authorisation. It even seems they started planning the monument 3 years before Gagarin made his orbit, which points out how important it must have seem to be a step ahead of the USA and basically ‘show off’, especially seen in the light of the Cold War and the Arms &amp; Space Race going on.</p>
+
+<h3 id="vectorial-elevation">Vectorial Elevation</h3>
+<p>Vectorial Elevation is a piece consisting of robitic search lights, which were directed by participants on the internet. The first time the work was shown was in 1999 in Mexico City to celebrat the arrival of the year 2000. It has been repeated on several locations and occasions, such as in Vancouver for the Winter Olympics in 2010. </p>
+
+<p><img src="/assets/images/DAT203_arapp_vancouver.jpg" alt="" /></p>
+
+<p>One of the unique aspects of this work is the scale and interaction with the public. By going to a website, everybody can create a lightsculpture and submit it to the queue, which is quite a lot of control for one of the biggest interactive artworks made. </p>
+
+<p>By not running a preprogrammed show, but give the public control it creates a sence of participation. </p>
+
+<p>The piece has been designed to ‘attract personal participation that creates a sense of connection, conplicity and entitlement’. By not being merely spectators people feel that they are part of something bigger and have a place. </p>
+
+<p>The locations of the work are in a central place, closely or on location of the festivity and viewable from the surroundings (depending on the strength of the lights it can be seen from 15 km). </p>
+
+<p>The work is a temporary installation, commissioned by organizations involved in the respecive festivity. </p>
+
+<p>If you compare the works they’re quite different, both in forn and functionality. The Monument to the Conquerers of Space is a symbol of national pride and achievement to impress people while the Vectorial Elevation is made to make people feel part of it, give them a place in society. </p>
+
+
+		</article>
+
+		<!-- <div class="tags">
+		
+			<p>Catagory: dat203</p>
+			
+				<p>Tags: </p>
+			
+		</div> -->
+
+      </div>
+
+    
+      <div class="post">
+		<header class="post-header">
+	        <h1 class="post-title">
+	          <!-- <a class="post-link" href="/dat203/2014/10/27/GPS-drawing.html"> -->GPS drawing <!-- </a> -->
+	        </h1>
+
+	        <!-- <span class="post-meta">27 October 2014</span> -->
+		</header>
+		<article class="post-content">
+			<p>This week we talked about GPS drawings. This is the practise of walking a figure and recording your GPS locations so these can be digitally visualised into your ‘drawing’. </p>
+
+<p>One of the characteristics of a GPS drawing is the influence the geoography has on your drawing. Because of (articifial or natural) obstacles forces you are forced into certain paths or limited in the choice of directions, which gives that every drawing has a ‘signature’ of the location where it was drawn. </p>
+
+<p>The funny thing is that this, depending on the area, can be mostly influenced by the choices of other people. With environments mostly modified or created by humans you don’t run into these obstacles if you follow the purpose of these structures. But when diverting from this ‘set path’, the structure that was first ment as for example an improvement has become an obstruction or vice versa. </p>
+
+<p>To me the appleal of GPS drawing seems to be in the fact that you can see it as a struggle between you and the location. Humans have always had a tendency to leave a trail and shape their environment to their benefits, but it will never suit all purposes and goals. When going on a walk (or other means of transportation) you are confronted with these elements and are forced to be creative with it. </p>
+
+<p>// stuff about artists?</p>
+
+<p>After looking at the map Robert and I decided to walk around the shopping area and draw a shopping bag around it. We drew a quick sketch on the map in photoshop:
+<img src="/assets/images/DAT203_gps_plan.JPG" alt="The planned route" /></p>
+
+<p>A little while later we walked the route and you can see the result on the picture below. Because our drawing is on a relative low scale the line is quite wobbly and sometimes we had to divert a bit from our planned route. Also we had a little glitch at the end which added some random lines through the crossing. 
+<img src="/assets/images/DAT203_gps_walk.jpg" alt="The map which shows our GPS drawing" /></p>
+
+<p>If you’re interested (and as proof that we did the walk :) ), you can find the original GPS data here: <a href="/assets/other/shoppingbag.xml">GPS data (XML)</a>.</p>
+
+
+		</article>
+
+		<!-- <div class="tags">
+		
+			<p>Catagory: dat203</p>
+			
+				<p>Tags: </p>
+			
+		</div> -->
+
+      </div>
+
+    
+      <div class="post">
+		<header class="post-header">
+	        <h1 class="post-title">
+	          <!-- <a class="post-link" href="/dat203/2014/10/09/fieldrecording.html"> -->Music Concrète - The music surrounding us <!-- </a> -->
+	        </h1>
+
+	        <!-- <span class="post-meta">9 October 2014</span> -->
 		</header>
 		<article class="post-content">
 			<p>Yesterday Mike gave a presentation for the module DAT201 (Strageties for Art &amp; Technology) about Sound Art, covering several topics and talked about some of the questions. One of the questions was about noise: ‘Is noise music?’. That question goes back to the question ‘What is noise?’. </p>
@@ -136,6 +260,8 @@
 </center>
 <p />
 
+<p>An interesting app I came across is <a href="http://thecreatorsproject.vice.com/blog/new-app-lets-you-record-geo-located-sounds-and-stories-for-others-to-discover?utm_source=tcpfbus">‘Recho’</a>. It lets you record soundbites and publish them. But to listen to the recording you need to be in the same location. This makes the recording in something bigger than just a soundrecording, but more of a memory or reference to something that has happened. </p>
+
 
 		</article>
 
@@ -156,18 +282,18 @@
 	          <!-- <a class="post-link" href="/dat203/2014/10/06/psychogeography.html"> -->Psychogeography - 'Falling in love with places' <!-- </a> -->
 	        </h1>
 
-	        <span class="post-meta">6 October 2014</span>
+	        <!-- <span class="post-meta">6 October 2014</span> -->
 		</header>
 		<article class="post-content">
 			<p>In the first practical session of Reflexive Design Mike talked about ‘Psychogeography’, which is defined as ‘the study of the precise laws and specific effects of the geographical environment, consciously organized or not, on the emotions and the behavior of individuals’. Practically that means making geographical distinction between areas based on emotions.</p>
 
-<p>The emotional judgement of locations is something I recognise doing. Two weeks ago I moved from the Netherlands to Plymouth, so I have loads of stuff to discover here. In the first week you get a lot of impressions and feelings when walking through Plymouth. But in a short period as a week or two things start to feel normal and you pay less attention to your surroundings and how it makes you feel. </p>
+<p>The emotional judgement of locations is something I recognise doing. Two weeks ago I moved from the Netherlands to Plymouth, so I have loads of stuff to discover here. In the first week you get a lot of impressions and feelings when walking through Plymouth. But I’ve also noticed that in a short period as a week or two things start to feel normal and you pay less attention to your surroundings and how it makes you feel. </p>
 
 <p>As noted by the worksheet the main practise to do psychogeography is <em>‘derive’</em>: ‘an aimless wandering with senses open to how certain areas make you feel’. We will be using a slightly different approach, We’ll draw a circle on the map and plan a route that follows the circle as close as possible. </p>
 
 <p><img src="/assets/images/DAT203_psychogeo_map.JPG" alt="The route drawn on the map" /></p>
 
-<p>Because I just moved to Plymouth it was a bit difficult to follow the assignment strictly and do an imaginary walk and divede the map up in area’s that have different feelings. So we skipped that one and went straight to the real walk!</p>
+<p>Because I just moved to Plymouth it was a bit difficult to follow the assignment strictly and do an imaginary walk and divide the map up in area’s that have different feelings. So we went straight to the real walk part!</p>
 
 <p>Marcin and I did the walk according to the route we drew on the map, here you can find some pictures and our findings noted in keypoints:</p>
 
@@ -310,7 +436,7 @@
 	          <!-- <a class="post-link" href="/2014/10/05/work-in-progress.html"> -->New site, new uni, new exciting stuff! <!-- </a> -->
 	        </h1>
 
-	        <span class="post-meta">5 October 2014</span>
+	        <!-- <span class="post-meta">5 October 2014</span> -->
 		</header>
 		<article class="post-content">
 			<h1 id="hi">Hi!</h1>
@@ -339,7 +465,6 @@ For now I’ll be mainly posting for the DAT203 Reflexive Design module from Dig
 
     
     
-z
   </section>
 
 </div>
